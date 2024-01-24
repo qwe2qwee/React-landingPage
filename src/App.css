@@ -44,3 +44,58 @@
 .text-color2 {
   color: #707070;
 }
+
+.logo-onMd {
+  bottom: 10px;
+  width: 195px;
+  position: absolute;
+  left: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Start off-screen on the right */
+  width: 300px;
+  height: 100%;
+  transition: right 0.3s ease;
+}
+
+.sidebar.open {
+  right: 0; /* Bring on-screen from the right */
+}
+
+.toggle-button {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  justify-content: center;
+  text-align: center;
+  z-index: 7; /* Ensure button is above sidebar */
+}
+
+.toggle-button svg {
+  position: absolute;
+  z-index: 0;
+}
+
+
+
+
+@media (max-width:795px) {
+  .hard {
+    display: none;
+  }
+}
+
+.border-yel {
+  border-color: #f4ce3f;
+}
+
+a span {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}

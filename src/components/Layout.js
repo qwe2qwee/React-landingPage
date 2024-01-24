@@ -1,12 +1,14 @@
 // Layout.js
 
 import React from "react";
+import Navbar from "./bars/Navbar";
+import Sidebar from "./bars/Sidebar";
 
 const Layout = ({ children }) => {
   let logo = (
     <svg
-      width='300'
-      height='76'
+      width='211'
+      height='80'
       viewBox='0 0 334 113'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
@@ -61,48 +63,15 @@ const Layout = ({ children }) => {
       />
     </svg>
   );
+
   return (
     <div className='font-sans'>
-      <nav className='bg-gray-200 p-5 text-center flex items-center justify-between'>
-        <div className='flex items-center space-x-4 text-lg justify-between'>
-          <a
-            href='#'
-            className='mx-2 hover:text-gray-900 hover:border-b-2 border-yellow-500 ml-6'>
-            الرئيسية
-          </a>
-          <a
-            href='#'
-            className='mx-2 text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500'>
-            من نحن
-          </a>
-          <a
-            href='#'
-            className='mx-2 text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500'>
-            الطاقم
-          </a>
-          <a
-            href='#'
-            className='mx-2 text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500'>
-            تواصل معنا
-          </a>
-          <a
-            href='#'
-            className='mx-2 text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500'>
-            المدونة
-          </a>
-          <a
-            href='#'
-            className='bg-orange-700 rounded-full px-3 py-2 text-white main-back'>
-            إبدا مشروعك
-          </a>
-        </div>
-        <h3 className=' font-bold text-gray-800 mr-2'>
-          {/* Optional: Logo Text */}
-          {logo}
-        </h3>
-      </nav>
+      <div>
+        <Sidebar logo={logo}/>
+        <Navbar logo={logo} />
+      </div>
 
-      <main className='p-4'>{children}</main>
+      <main className='p-5 bg-orange-500'>{children}</main>
     </div>
   );
 };
