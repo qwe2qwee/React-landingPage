@@ -1,3 +1,7 @@
+:root {
+  --main-color: #f9692b;
+}
+
 .App {
   text-align: center;
 }
@@ -38,12 +42,14 @@
 }
 
 .main-back {
-  background-color: #f9692b;
+  background-color: var(--main-color);
 }
 
 .text-color2 {
   color: #707070;
 }
+
+/*    navbaar  */
 
 .logo-onMd {
   bottom: 10px;
@@ -78,12 +84,10 @@
 .toggle-button svg {
   position: absolute;
   z-index: 0;
+  color: var(--main-color);
 }
 
-
-
-
-@media (max-width:795px) {
+@media (max-width: 795px) {
   .hard {
     display: none;
   }
@@ -97,5 +101,65 @@ a span {
   display: flex;
   align-items: center;
   text-align: center;
-  
+}
+
+/*    navbaar  */
+
+/* Home section */
+
+#Home {
+  height: calc(100vh - 162px);
+}
+
+@media screen and (min-width: 2px) and (max-width: 768px) {
+  #Home {
+    height: calc(100vh - 40px);
+  }
+}
+
+#Home h1 {
+  color: var(--main-color);
+  font-size: bold;
+}
+
+@media screen and (min-width: 230px) and (max-width: 360px) {
+  .in-home {
+    padding-top: 63px;
+    padding-right: 4px;
+  }
+}
+
+/* icons */
+.lamp-icon {
+  bottom: 24%;
+  left: 50%;
+  width: 9%;
+  z-index: 2;
+}
+
+.post1 {
+  bottom: 1px;
+  z-index: 1;
+}
+
+.sett {
+  width: 4%;
+  z-index: 2;
+  left: 10%;
+  bottom: 4%;
+}
+
+/* hhhhhh */
+.radd-icon {
+  bottom: 5%;
+  width: 5%;
+  left: 15%;
+  z-index: 2;
+}
+
+/* icons */
+
+.post2 {
+  bottom: 91px;
+  z-index: 0;
 }

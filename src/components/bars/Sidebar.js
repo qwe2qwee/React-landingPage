@@ -5,7 +5,6 @@ import { IoIosPeople } from "react-icons/io";
 import { RiContactsFill } from "react-icons/ri";
 import { FaBloggerB } from "react-icons/fa6";
 import { CgMenu } from "react-icons/cg";
-import { BiMenuAltRight } from "react-icons/bi";
 
 const Sidebar = (props) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -28,9 +27,9 @@ const Sidebar = (props) => {
     };
   }, [sidebarOpen]);
   return (
-    <div className={`sidebar ${sidebarOpen ? "open" : ""} block md:hidden`}>
+    <div className={`sidebar ${sidebarOpen ? "open" : ""} block md:hidden z-30`}>
       <div className='toggle-button bg:border-yel rounded-lg w-6 h-6 flex items-center bg-center' onClick={toggleSidebar}>
-      {sidebarOpen ? <BiMenuAltRight /> : <CgMenu />}
+       <CgMenu /> 
       </div>
       <div className='bg-gray-200 sm:bg-white p-5  flex flex-col items-start h-full pt-11'>
         <div className='flex flex-col items-start space-y-4 text-lg'>

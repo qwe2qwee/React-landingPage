@@ -1,15 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Layout from './components/Layout';
+import logo from "./logo.svg";
+import "./App.css";
+import Layout from "./components/Layout";
+import Home from "./components/Pages/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-
-      <Layout>heloo</Layout>
-  
-    </div>
-  );
+    <Layout>
+    <Home/>
+    </Layout>
+  )
 }
 
 export default App;

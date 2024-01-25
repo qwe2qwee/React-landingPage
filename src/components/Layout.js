@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
         <Navbar logo={logo} />
       </div>
 
-      <main className='p-5 bg-orange-500'>{children}</main>
+      <main className='p-5 bg-orange-500 overflow-hidden'>{children}</main>
     </div>
   );
 };
