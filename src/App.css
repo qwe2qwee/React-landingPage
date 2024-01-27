@@ -151,10 +151,58 @@ a span {
 
 /* hhhhhh */
 .radd-icon {
-  bottom: 5%;
+  bottom: 17%;
   width: 5%;
-  left: 15%;
+  left: 17%;
   z-index: 2;
+}
+
+.zaman-icon {
+  bottom: 5%;
+  left: 17%;
+  z-index: 2;
+  width: 5%;
+}
+
+.m-icon {
+  z-index: 2;
+  bottom: 5%;
+  left: 17%;
+}
+
+.heart-icon {
+  z-index: 2;
+  bottom: 5%;
+  left: 17%;
+}
+
+.play-icon {
+  z-index: 2;
+  bottom: 5%;
+  left: 17%;
+}
+
+.talk-icon {
+  z-index: 2;
+  bottom: 5%;
+  left: 17%;
+}
+
+.ab-icon {
+  z-index: 2;
+  bottom: 5%;
+  left: 17%;
+}
+
+.three-icon {
+  z-index: 2;
+  bottom: 5%;
+  left: 17%;
+}
+@media (min-width: 770px) {
+  .post1 {
+    left: 0;
+  }
 }
 
 /* icons */
