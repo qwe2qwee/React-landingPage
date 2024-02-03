@@ -3,8 +3,10 @@ import { MdSdCardAlert } from "react-icons/md";
 import { IoHomeSharp } from "react-icons/io5";
 import { IoIosPeople } from "react-icons/io";
 import { RiContactsFill } from "react-icons/ri";
-import { FaBloggerB } from "react-icons/fa6";
+import { FaBloggerB, FaArrowRightLong } from "react-icons/fa6";
 import { CgMenu } from "react-icons/cg";
+import { BiMenuAltRight } from "react-icons/bi";
+
 
 const Sidebar = (props) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,16 +28,32 @@ const Sidebar = (props) => {
       document.removeEventListener("click", closeSidebarOutsideClick);
     };
   }, [sidebarOpen]);
+
+  let icon;
+
+  icon = (
+    <div
+      className='toggle-button bg:border-yel rounded-lg w-6 h-6 flex items-center bg-center'
+      onClick={toggleSidebar}>
+      <BiMenuAltRight />
+    </div>
+  );
+
   return (
-    <div className={`sidebar ${sidebarOpen ? "open" : ""} block md:hidden z-30`}>
-      <div className='toggle-button bg:border-yel rounded-lg w-6 h-6 flex items-center bg-center' onClick={toggleSidebar}>
-       <CgMenu /> 
-      </div>
-      <div className='bg-gray-200 sm:bg-white p-5  flex flex-col items-start h-full pt-11'>
-        <div className='flex flex-col items-start space-y-4 text-lg'>
+    <div
+      className={`sidebar ${sidebarOpen ? "open" : ""} block md:hidden z-30 `}>
+      {icon}
+
+      <div className='bg-white sm:bg-white p-5  flex flex-col items-start h-full pt-11 ssd'>
+        <div
+          className=' bg:border-yel rounded-lg w-6 h-6 flex items-center bg-center absolute toggle-in'
+          onClick={toggleSidebar}>
+          <FaArrowRightLong />
+        </div>
+        <div className='flex flex-col items-start space-y-4 text-lg w-full'>
           <a
             href='#Home'
-            className='hover:text-gray-900 hover:border-b-2 border-yellow-500 flex'>
+            className='hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
             <span className='pl-2'>
               <IoHomeSharp />
             </span>
@@ -43,7 +61,7 @@ const Sidebar = (props) => {
           </a>
           <a
             href='#About'
-            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex'>
+            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
             <span className='pl-2'>
               <MdSdCardAlert />
             </span>
@@ -52,7 +70,7 @@ const Sidebar = (props) => {
 
           <a
             href='#Team'
-            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex'>
+            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
             <span className='pl-2'>
               <IoIosPeople />
             </span>
@@ -60,7 +78,7 @@ const Sidebar = (props) => {
           </a>
           <a
             href='#Contect'
-            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yel flex'>
+            className='text-color2 hover:text-gray-900 hover:border-b-2 flex sidee'>
             <span className='pl-2'>
               <RiContactsFill />
             </span>
@@ -68,7 +86,7 @@ const Sidebar = (props) => {
           </a>
           <a
             href='#Blog'
-            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex'>
+            className='text-color2 hover:text-gray-900 hover:border-b-2  flex sidee'>
             <span className='pl-2'>
               <FaBloggerB />
             </span>

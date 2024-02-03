@@ -51,6 +51,11 @@
 
 /*    navbaar  */
 
+.sections {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .logo-onMd {
   bottom: 10px;
   width: 195px;
@@ -71,6 +76,17 @@
   right: 0; /* Bring on-screen from the right */
 }
 
+.ssd {
+  box-shadow:10px 10px 9px 5px #888888;
+}
+
+.sidee {
+  border-color: #c3c3c3;
+  border-bottom-width: 1px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+
 .toggle-button {
   cursor: pointer;
   position: fixed;
@@ -78,7 +94,14 @@
   right: 20px;
   justify-content: center;
   text-align: center;
-  z-index: 7; /* Ensure button is above sidebar */
+  z-index: -1; /* Ensure button is above sidebar */
+}
+
+.toggle-in {
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+  color: var(--main-color);
 }
 
 .toggle-button svg {
@@ -113,7 +136,7 @@ a span {
 
 @media screen and (min-width: 2px) and (max-width: 768px) {
   #Home {
-    height: calc(100vh - 40px);
+    height: 100vh;
   }
 }
 
@@ -138,7 +161,7 @@ a span {
 }
 
 .post1 {
-  bottom: 1px;
+  bottom: 46px;
   z-index: 1;
 }
 
@@ -196,13 +219,23 @@ a span {
 
 .three-icon {
   z-index: 2;
-  bottom: 5%;
-  left: 17%;
+  bottom: 30%;
+  right: 2%;
 }
 @media (min-width: 770px) {
   .post1 {
+    left: 17px;
+    width: 74%;
+    bottom: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .post1 {
     left: 0;
   }
+
+
 }
 
 /* icons */
@@ -210,4 +243,30 @@ a span {
 .post2 {
   bottom: 91px;
   z-index: 0;
+  height: 10%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .in-home {
+    text-align: center;
+  }
+}
+
+/* Tablet devices (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Desktop devices and larger */
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
 }
