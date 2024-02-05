@@ -3,7 +3,10 @@ import React from "react";
 const Navbar = (props) => {
   return (
     <div className='hidden md:block'>
-      <nav className='bg-gray-200 sm:bg-white p-5 text-center flex items-center justify-between lg:px-11'>
+      <div className="bg-gray-200 sm:bg-white p-5 text-center flex items-center justify-between lg:px-11 hat">
+
+      </div>
+      <nav className='bg-gray-200 sm:bg-white p-5 text-center flex items-center justify-between lg:px-11 w-full fixed z-50 top-0'>
         <div className='flex items-center space-x-4 text-lg justify-between'>
           <a
             href='#Home'

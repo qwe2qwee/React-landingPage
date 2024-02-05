@@ -3,7 +3,7 @@ import React from "react";
 import data from "./Data";
 
 
-const Home = () => {
+const First = () => {
   return (
     <div className=' caret-blue-800 relative' id='Home'>
       <div className='md:pr-12 pt-32 md:pt-16 in-home'>
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default First;

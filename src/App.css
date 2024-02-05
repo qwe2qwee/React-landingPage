@@ -88,6 +88,10 @@
   box-shadow: 10px 10px 9px 5px #888888;
 }
 
+.hat {
+  height: 120px;
+}
+
 .sidee {
   border-color: #c3c3c3;
   border-bottom-width: 1px;
@@ -371,6 +375,29 @@ a span {
 }
 
 /* --------------------------End About ------------------------------------ */
+
+
+
+
+/* --------------------------Server section------------------------------------ */
+
+
+.head {
+  color:var(--main-color)
+}
+
+
+
+
+/* --------------------------Server section------------------------------------ */
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 450px) {
 }

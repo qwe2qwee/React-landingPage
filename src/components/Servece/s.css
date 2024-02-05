@@ -1,0 +1,12 @@
+
+.slick-prev:before, .slick-next:before {
+  color: #F8682A;
+}
+
+.mar img {
+  margin: auto;
+}
+
+.slick-dots {
+  bottom: -32px;
+}
