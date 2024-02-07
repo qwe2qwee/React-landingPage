@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./s.css";
 import sirv1 from "./img/22.png";
 import sirv2 from "./img/4.png";
+import sirv3 from "./img/43.png";
+
+
 
 const Slideshow = () => {
   const settings = {
@@ -17,7 +20,8 @@ const Slideshow = () => {
     initialSlide: 2,
   };
   return (
-    <Slider {...settings} className=' w-60 h-48 mar'>
+    <>
+        <Slider {...settings} className=' w-60 h-48 mar'>
       <div className='flex items-center justify-center'>
         <img src={sirv1} alt='s' className=' object-cover' />
       </div>
@@ -25,9 +29,11 @@ const Slideshow = () => {
         <img src={sirv2} alt='s' className=' object-cover' />
       </div>
       <div>
-        <img src={sirv2} alt='s' className=' object-cover' />
+        <img src={sirv3} alt='s' className=' object-cover' />
       </div>
     </Slider>
+    </>
+
   );
 };
 

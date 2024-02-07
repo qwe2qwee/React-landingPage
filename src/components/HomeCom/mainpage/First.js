@@ -1,6 +1,6 @@
 import React from "react";
 
-import data from "./Data";
+import data from "../Data";
 
 
 const First = () => {
