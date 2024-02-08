@@ -409,7 +409,7 @@ a span {
   bottom: 2px;
 }
 
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 768px) {
   body {
     background-color: lightgreen;
   }
@@ -432,7 +432,6 @@ a span {
   padding-bottom: 4%;
 }
 
-
 .form-f input {
   border-radius: 4px;
 }
@@ -447,7 +446,12 @@ a span {
   text-align: center;
   margin: auto;
   padding: 2%;
-  
+}
+
+@media only screen and (max-width: 538px) {
+  .form-fw {
+    padding-bottom: 11%;
+  }
 }
 
 .form-fw h4 {
@@ -458,7 +462,6 @@ a span {
   width: 100%;
   opacity: 0.4;
   padding: 13px;
-
 }
 
 .letter-form {
@@ -495,6 +498,35 @@ a span {
   }
 }
 /* --------------------------Form section------------------------------------ */
+
+@media only screen and (max-width: 538px) {
+  .icons-footer-up {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .icons-footer-dwon {
+    margin-left: 0.25rem;
+  }
+
+  .imga-f {
+    top: -87px;
+    right: -25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .imga-f {
+    top: -61px;
+    right: -18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: lightgreen;
+  }
+}
 
 /* --------------------------Form section------------------------------------ */
 
