@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "./bars/Navbar";
 import Sidebar from "./bars/Sidebar";
+import Footer from "./Footer/Footer";
 
 const Layout = ({ children }) => {
   let logo = (
@@ -65,13 +66,14 @@ const Layout = ({ children }) => {
   );
 
   return (
-    <div className='font-sans'>
+    <div className='font-sans w-full'>
       <div>
-        <Sidebar logo={logo}/>
+        <Sidebar logo={logo} />
         <Navbar logo={logo} />
       </div>
 
       <main className='overflow-hidden'>{children}</main>
+      <Footer />
     </div>
   );
 };

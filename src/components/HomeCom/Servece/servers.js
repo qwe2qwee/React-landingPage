@@ -19,7 +19,7 @@ const wide1 = (
         filterUnits='userSpaceOnUse'>
         <feOffset dy='4' input='SourceAlpha' />
         <feGaussianBlur stdDeviation='10.5' result='blur' />
-        <feFlood flood-color='#787878' flood-opacity='0.29' />
+        <feFlood floodColor='#787878' floodOpacity='0.29' />
         <feComposite operator='in' in2='blur' />
         <feComposite in='SourceGraphic' />
       </filter>
@@ -194,16 +194,16 @@ const servers = () => {
   return (
     <>
       <div className=' h-50 relative in-serv flex justify-center items-center'>
-        <div class='flex justify-between'>
-          <div class='flex-none bg-white p-4 flex justify-center items-center z-30 flex-col relative'>
+        <div className='flex justify-between'>
+          <div className='flex-none bg-white p-4 flex justify-center items-center z-30 flex-col relative'>
             {wide1}
             <p className="biggg">تصميم وبرمجة المواقع والتطبيقات</p>
           </div>
-          <div class='flex-none bg-white p-4 flex justify-center items-center z-30 flex-col relative'>
+          <div className='flex-none bg-white p-4 flex justify-center items-center z-30 flex-col relative'>
             {wide2}
             <p>التسويق الإلكتروني</p>
           </div>
-          <div class='flex-grow bg-white p-4  flex justify-center items-center z-30 flex-col relative'>
+          <div className='flex-grow bg-white p-4  flex justify-center items-center z-30 flex-col relative'>
             <img src={logoo} alt='s' />
             <p>صناعة المحتوى</p>
           </div>

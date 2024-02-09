@@ -4,45 +4,6 @@
   --text-color: #707070;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .main-back {
   background-color: var(--main-color);
 }
@@ -56,6 +17,7 @@
 .sections {
   padding-left: 2rem;
   padding-right: 2rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -162,6 +124,12 @@ a span {
   .in-home {
     padding-top: 63px;
     padding-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .in-home {
+    text-align: center;
   }
 }
 
@@ -327,10 +295,6 @@ a span {
 
 /* Tablet devices (portrait and landscape) */
 @media only screen and (min-width: 768px) {
-  body {
-    background-color: lightgreen;
-  }
-
   .mann {
     display: none;
   }
@@ -410,9 +374,6 @@ a span {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    background-color: lightgreen;
-  }
   .slideS {
     display: none;
   }
@@ -446,6 +407,8 @@ a span {
   text-align: center;
   margin: auto;
   padding: 2%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 @media only screen and (max-width: 538px) {
@@ -497,7 +460,51 @@ a span {
     padding-left: 44%;
   }
 }
-/* --------------------------Form section------------------------------------ */
+/* --------------------------Footer section------------------------------------ */
+
+.footer {
+  background-color: #002147;
+}
+
+.footer .floot {
+  background-color: #fec520;
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    height: 32rem;
+  }
+
+  .box-footer-up {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .icons-footer-up {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1.50rem;
+  }
+
+  .footer-icons-up-in {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .icons-footer-dwon {
+    margin-left: 0.15rem;
+  }
+
+
+  .footer .floot {
+    flex-direction: row;
+  }
+
+  .box-footer-up {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width: 538px) {
   .icons-footer-up {
@@ -522,34 +529,54 @@ a span {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    background-color: lightgreen;
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .imga-f {
+    width: 279px;
+    top: -48px;
+    right: 8px;
   }
 }
 
-/* --------------------------Form section------------------------------------ */
+@media only screen and (min-width: 1023px) {
+  .icons-footer-dwon {
+    margin-left: 2.25rem;
+    margin-right: 3.25rem;
+  }
 
-@media only screen and (max-width: 450px) {
+  .icons-footer-up {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .imga-f {
+    top: -81px;
+    right: 0;
+    width: 358px;
+  }
+}
+
+/* --------------------------Footer section------------------------------------ */
+
+/* @media only screen and (max-width: 450px) {
 }
 
 /* Mobile devices (portrait and landscape) */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .in-home {
     text-align: center;
   }
-}
+} */
 
 /* Tablet devices (portrait and landscape) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     background-color: lightgreen;
   }
-}
+} */
 
 /* Desktop devices and larger */
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   body {
     background-color: white;
   }
-}
+} */
