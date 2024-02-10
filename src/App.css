@@ -49,6 +49,7 @@
 
 .ssd {
   box-shadow: 10px 10px 9px 5px #888888;
+  max-height: 100vh;
 }
 
 .hat {
@@ -411,6 +412,12 @@ a span {
   border-bottom-right-radius: 0;
 }
 
+@media only screen and (max-width: 450px) {
+  .form-f {
+    margin-bottom: 25%;
+  }
+}
+
 @media only screen and (max-width: 538px) {
   .form-fw {
     padding-bottom: 11%;
@@ -475,6 +482,15 @@ a span {
     height: 32rem;
   }
 
+  .imga-f {
+    top: -126px !important;
+    right: -18px;
+  }
+
+  .post1 {
+    bottom: 63px !important;
+  }
+
   .box-footer-up {
     display: flex;
     margin-top: 1rem;
@@ -483,7 +499,7 @@ a span {
   .icons-footer-up {
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 1.50rem;
+    margin-top: 1.5rem;
   }
 
   .footer-icons-up-in {
@@ -495,7 +511,6 @@ a span {
     margin-left: 0.15rem;
   }
 
-
   .footer .floot {
     flex-direction: row;
   }
@@ -503,6 +518,17 @@ a span {
   .box-footer-up {
     margin-top: 1rem;
     flex-direction: column;
+  }
+
+  .footer .mann {
+    object-fit: cover;
+    max-width: 170px;
+    position: absolute;
+  }
+
+  .sections {
+    padding-left: 0.11rem !important ;
+    padding-right: 0.11rem !important;
   }
 }
 
