@@ -6,7 +6,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { FaBloggerB, FaArrowRightLong } from "react-icons/fa6";
 import { CgMenu } from "react-icons/cg";
 import { BiMenuAltRight } from "react-icons/bi";
-
+import { Link } from "react-router-dom";
 
 const Sidebar = (props) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -51,53 +51,45 @@ const Sidebar = (props) => {
           <FaArrowRightLong />
         </div>
         <div className='flex flex-col items-start space-y-4 text-lg w-full'>
-          <a
-            href='#Home'
+          <Link
+            to='/'
             className='hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
             <span className='pl-2'>
               <IoHomeSharp />
             </span>
             الرئيسية
-          </a>
-          <a
-            href='#About'
+          </Link>
+          <Link
+            to='/Servers'
             className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
             <span className='pl-2'>
               <MdSdCardAlert />
             </span>
             من نحن
-          </a>
+          </Link>
 
-          <a
-            href='#Team'
-            className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
+          <Link className='text-color2 hover:text-gray-900 hover:border-b-2 border-yellow-500 flex sidee'>
             <span className='pl-2'>
               <IoIosPeople />
             </span>
             الطاقم
-          </a>
-          <a
-            href='#Contect'
-            className='text-color2 hover:text-gray-900 hover:border-b-2 flex sidee'>
+          </Link>
+          <Link className='text-color2 hover:text-gray-900 hover:border-b-2 flex sidee'>
             <span className='pl-2'>
               <RiContactsFill />
             </span>
             تواصل معنا
-          </a>
-          <a
-            href='#Blog'
-            className='text-color2 hover:text-gray-900 hover:border-b-2  flex sidee'>
+          </Link>
+          <Link className='text-color2 hover:text-gray-900 hover:border-b-2  flex sidee'>
             <span className='pl-2'>
               <FaBloggerB />
             </span>
             المدونة
-          </a>
+          </Link>
         </div>
-        <a
-          href='#Start'
-          className='bg-orange-700 rounded-full px-3 py-2 text-white mt-4 '>
+        <Link className='bg-orange-700 rounded-full px-3 py-2 text-white mt-4 '>
           إبدا مشروعك
-        </a>
+        </Link>
         <h3 className='font-bold text-gray-800 mt-4 logo-onMd'>{props.logo}</h3>
       </div>
     </div>
