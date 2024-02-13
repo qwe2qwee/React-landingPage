@@ -23,7 +23,7 @@ const Form = () => {
   };
 
   return (
-    <div className=' mx-auto bg-white p-6 rounded-md shadow-md  sections form-fw'>
+    <div className=' mx-auto bg-white p-6 rounded-md shadow-md  sections form-fw' id="Form">
       <h4 className=" text-2xl lg:text-3xl"> احجز إستشارة الان</h4>
 
       <div className='form-f'>

@@ -15,11 +15,18 @@ p {
 
 .services-sec {
   min-height: 100vh;
-  background-color: red;
 }
 
 .top-section {
   height: 20rem;
+}
+
+.box-biggg {
+  display: none;
+  margin-top: 5rem;
+  margin-bottom: 1.25rem;
+
+  background-color: #FFF4D8;
 }
 
 .box-1 {
@@ -34,13 +41,19 @@ p {
   background-color: var(--color1);
 }
 
-.box-top-section {
-
+.box-top-section,
+.box-top-section1 {
   background-color: #ffffff; /* Background color */
   box-shadow: 0px 0px 5px rgb(1 0 0 / 38%);
   border-radius: 5px;
   position: relative;
   color: white;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.back-line-s {
+  display: none;
 }
 
 .bt-main {
@@ -70,8 +83,10 @@ p {
 
   .box-top-section {
     font-size: small;
-  
+    padding: 1rem;
+    padding-bottom: 3rem;
   }
+
 
   .bottuns-in {
     display: flex;
@@ -80,4 +95,105 @@ p {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .box-top-section {
+    font-size: 0.8rem;
+    width: 87%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  p {
+    width: 90%;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: x-large;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .box-top-section {
+    display: none;
+  }
+
+  .bottuns-large {
+    min-width: 85px;
+  }
+  .bt-main {
+    font-size: medium;
+    color: white;
+    bottom: 12px;
+  }
+
+  .bottuns-in {
+    flex-direction: column;
+    font-size: small;
+  }
+  .back-line-s {
+    background-color: #fcdd97;
+    width: 97%;
+    width: 453px;
+    height: 0.55rem;
+    margin: auto;
+    display: block;
+  }
+
+  .box-top-section1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 83%;
+    margin: auto;
+    color: var(--main-color);
+    margin-bottom: 4rem;
+    border-radius: 23px;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h3 {
+    font-size: xx-large;
+  }
+  .big-s-box {
+    width: 61%;
+    margin: auto;
+  }
+
+  .box-biggg {
+    display: flex;
+  }
+
+  .top-section p {
+    max-width: 563px;
+    margin: auto;
+  }
+}
+
+
+
+@media only screen and (min-width: 1023px) {
+
+  .box-biggg {
+    margin-top: 11rem;
+  }
+
+  .box-top-section1 {
+    width: 64%;
+    top: 3%;
+  }
+
+  .bt-main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }
