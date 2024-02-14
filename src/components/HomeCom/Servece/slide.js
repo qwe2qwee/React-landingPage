@@ -12,7 +12,7 @@ import sirv3 from "./img/43.png";
 const Slideshow = () => {
   const settings = {
     dots: true,
-    lazyLoad: true,
+    lazyLoad: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
