@@ -99,6 +99,8 @@
   bottom: 30%;
   right: 2%;
 }
+
+
 @media (min-width: 770px) {
   .post1 {
     left: 0px;
@@ -279,3 +281,7 @@
 }
 
 /* --------------------------Server section End------------------------------------ */
+
+.tss {
+  color: white !important;
+}

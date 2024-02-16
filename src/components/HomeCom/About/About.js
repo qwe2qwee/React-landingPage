@@ -13,7 +13,7 @@ const About = () => {
       </div>
       <div className='w-3/5 bg-transparent box1'>
         <h2 className='bold-text'>نحن هنا</h2>
-        <p className='mb-4'>
+        <p className='mb-4 text-white tss'>
           صنع حلولًا متكاملة من خدمات الإنتاج المرئي والتسويــق الــرقمـــي
           وتطوير الهويات التّجارية من البحــث والإعـــداد إلــــى الإنتــــاج
           والإطـــــــلاق!

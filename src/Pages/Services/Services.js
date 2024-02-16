@@ -3048,8 +3048,8 @@ const Services = () => {
         <div className='text-center my-11 hidden icon-in-ser1'>{icon}</div>
         <div className='text-center my-11 icon-in-ser2'>{icon2}</div>
 
-        <div class='max-w-xl px-4 lg:px-0 py-8 lg:py-12 bg-slate-400 shadow-lg rounded-lg mx-3 sm:m-auto boxx'>
-          <p class='text-center lg:text-right text-lg lg:text-xl'>
+        <div class='max-w-xl px-4 lg:px-3 py-8 lg:py-12 bg-slate-400 shadow-lg rounded-lg mx-3 sm:m-auto boxx'>
+          <p class='text-center lg:text-right text-lg lg:text-xl '>
             نحن فريق من المصممين المحترفين والمطورين المتميزين في تصميم وتطوير
             المواقع الإلكترونية، بأحدث التقنيات والأدوات المتاحة. سواء كنت تحتاج
             إلى موقع شخصي أو مدونة أو متجر إلكتروني، أو حتى موقع لشركتك، فإننا

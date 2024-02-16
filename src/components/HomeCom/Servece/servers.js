@@ -2,7 +2,8 @@ import React from "react";
 import logoo from "./img/Group 146256.png";
 import dotted from "./img/Dotted Square 2.png";
 import dotted1 from "./img/Dotted Square 2.png";
-
+import { Link } from "react-router-dom";
+// more
 const wide1 = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -196,8 +197,9 @@ const servers = () => {
       <div className=' h-50 relative in-serv flex justify-center items-center'>
         <div className='flex justify-between'>
           <div className='flex-none bg-white p-4 flex justify-center items-center z-30 flex-col relative'>
-            {wide1}
-            <p className="biggg">تصميم وبرمجة المواقع والتطبيقات</p>
+            <Link to='Servers'>{wide1}</Link>
+
+            <p className='biggg'>تصميم وبرمجة المواقع والتطبيقات</p>
           </div>
           <div className='flex-none bg-white p-4 flex justify-center items-center z-30 flex-col relative'>
             {wide2}

@@ -47,7 +47,7 @@ p {
 }
 
 .boxx {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .box-top-section,
@@ -73,6 +73,9 @@ p {
   position: absolute;
   transform: translateX(-50%);
   bottom: -11px;
+}
+.back-line-ss {
+  display: none;
 }
 
 .bottuns-in {
@@ -222,7 +225,6 @@ p {
   .box-biggg {
     margin-top: 11rem;
   }
-
 
   .box-top-section1 {
     width: 64%;
