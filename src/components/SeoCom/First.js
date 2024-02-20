@@ -1,19 +1,27 @@
 import React from "react";
+import Sbottun from "../ServicesCom/reuseSer/Sbottun";
+import "./Seo.css";
 
 const First = () => {
   return (
-    <div className='h-screen flex justify-center items-baseline  bg-gray-200'>
-      <div className='w-full bg-white p-8 rounded-lg absolute top-30 mt-8 text-center'>
-        <h3 className='text-sm font-semibold mb-2'>Title</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <div className='h-screen flex justify-center items-baseline  ht'>
+      <div className='w-full bg-white p-8 rounded-lg absolute top-2 mt-0 pt-16 md:pt-32 text-center'>
+        <div className='relative big-s-box'>
+          {" "}
+          <h3 className='text-color-s pt-4 relative z-10 '>
+            التسويق الرقمي{" "}
+          </h3>{" "}
+          <div class='absolute inset-x-0 bottom-0 h-1  z-0 back-line-s'></div>
+        </div>
+        <p className="p-6 m-auto text-center max-w-md ">
+          هنا نـبـنــي تـواجــدك الرقـمــي ،بخطة مدروسة لتـفـعـيــل منصاتك
+          الرقمية و لتبقى دائمًا في ذهن فئتك المستهدفة، ضمن هذه الخدمات
         </p>
       </div>
-      <div className='h-screen w-screen flex justify-center items-center bg-gray-200 mt-28'>
-        <div className=' h-80 bg-whiterounded-lg w-full relative'>
-          <div className='flex justify-between sm:flex-row relative z-10 lg:px-28'>
-            <div className='w-1/3 bg-white p-4 rounded-lg shadow-md flex items-center flex-col text-center mx-3 min-h-52'>
+      <div className='h-screen w-screen flex justify-center items-center '>
+        <div className=' h-96 bg-whiterounded-lg w-full relative'>
+          <div className='flex justify-between md:flex-row relative z-10 lg:px-80 md:px-20 lg:top-4 flex-col text-center items-center'>
+            <div className='w-2/3 sm:w-1/3 max-w-52  bg-white p-4 rounded-lg shadow-md flex items-center flex-col text-center mx-3 min-h-52'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='79.409'
@@ -124,9 +132,9 @@ const First = () => {
                 </g>
               </svg>
 
-              <h3 className=" text-sm mt-8">التسويق عبر الممؤثرين</h3>
+              <h3 className=' text-sm mt-8'>التسويق عبر الممؤثرين</h3>
             </div>
-            <div className='w-1/3 bg-white p-4 rounded-lg shadow-md flex items-center flex-col text-center  mx-3 min-h-52'>
+            <div className='w-2/3  sm:w-1/3 max-w-52 bg-white p-4 rounded-lg shadow-md flex items-center flex-col text-center my-12 md:my-0   mx-3 min-h-52'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='75.506'
@@ -223,9 +231,9 @@ const First = () => {
                 </g>
               </svg>
 
-              <h3 className=" text-sm mt-8 ">إدارة منصات التواصل الاجتماعي</h3>
+              <h3 className=' text-sm mt-8 '>إدارة منصات التواصل الاجتماعي</h3>
             </div>
-            <div className='w-1/3 bg-white p-4 rounded-lg shadow-md flex items-center flex-col text-center  mx-3 min-h-52'>
+            <div className='w-2/3 sm:w-1/3 max-w-52 bg-white p-4 rounded-lg shadow-md flex items-center flex-col text-center  mx-3 min-h-52'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='70.668'
@@ -321,13 +329,14 @@ const First = () => {
                   />
                 </g>
               </svg>
-
-              <h3 className=" text-xs mt-8">تحسين محركات البحث SEO</h3>
+              <h3 className=' text-xs mt-8'>تحسين محركات البحث SEO</h3>
             </div>
           </div>
-          <div className=" bg-slate-700 h-48 absolute z-0 bottom-5 w-full"></div>
+          <Sbottun className={"z-20 text-center lg:bottom-5 md:block hidden "} />
+          <div className=' h-56 absolute z-0 bottom-14 w-full backFlot hidden md:block'></div>
         </div>
       </div>
+      <Sbottun className={'text-white butt md:hidden top-72'}/>
     </div>
   );
 };
