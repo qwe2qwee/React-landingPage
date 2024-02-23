@@ -1,5 +1,7 @@
 import React from "react";
 import FirstR from "../HomeCom/FirstCompR/FirstR";
+
+let mani = "ggon";
 let first = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -108,6 +110,8 @@ let first = (
     </g>
   </svg>
 );
+
+mani = "goon"
 
 let seconed = (
   <svg
@@ -313,9 +317,7 @@ const dataUp = [
 ];
 
 const First = () => {
-  return (
-    <FirstR D={Deatals} C={CardData} U={dataUp}/>
-  );
+  return <FirstR D={Deatals} C={CardData} U={dataUp} />;
 };
 
 export default First;
