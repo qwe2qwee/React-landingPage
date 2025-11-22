@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Digital - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+موقع Landing Page احترافي لشركة Digital للخدمات الرقمية، مبني باستخدام React وTailwind CSS.
 
-In the project directory, you can run:
+[العرض المباشر](#) · [الإبلاغ عن مشكلة](../../issues) · [طلب ميزة](../../issues)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## نظرة عامة
 
-### `npm test`
+موقع ويب حديث ومتجاوب لعرض خدمات الشركة الرقمية، يتضمن صفحات متعددة مع تصميم جذاب وتجربة مستخدم سلسة.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## المميزات
 
-### `npm run build`
+- تصميم متجاوب يعمل على جميع الأجهزة (Mobile First)
+- دعم كامل للغة العربية (RTL)
+- شريط تنقل ثابت مع قائمة جانبية للموبايل
+- صفحات متعددة (الرئيسية، الخدمات، التسويق الرقمي)
+- مكونات قابلة لإعادة الاستخدام
+- سلايدر للعرض التقديمي
+- نموذج تواصل في الـ Footer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## التقنيات المستخدمة
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| التقنية | الوصف |
+|---------|-------|
+| [React 18](https://reactjs.org/) | مكتبة JavaScript لبناء واجهات المستخدم |
+| [React Router DOM](https://reactrouter.com/) | التنقل بين الصفحات |
+| [Tailwind CSS](https://tailwindcss.com/) | إطار عمل CSS للتصميم السريع |
+| [React Icons](https://react-icons.github.io/react-icons/) | مكتبة الأيقونات |
+| [React Slick](https://react-slick.neostack.com/) | مكون السلايدر |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## هيكل المشروع
 
-### `npm run eject`
+```
+src/
+├── Pages/                    # صفحات التطبيق
+│   ├── Home/                 # الصفحة الرئيسية
+│   ├── Services/             # صفحة الخدمات
+│   └── SEO/                  # صفحة SEO
+├── components/               # المكونات
+│   ├── bars/                 # شريط التنقل والقائمة الجانبية
+│   │   ├── Navbar.js
+│   │   └── Sidebar.js
+│   ├── Footer/               # الـ Footer ونموذج التواصل
+│   ├── HomeCom/              # مكونات الصفحة الرئيسية
+│   │   ├── About/
+│   │   ├── FirstCompR/
+│   │   ├── mainpage/
+│   │   └── Servece/
+│   ├── SeoCom/               # مكونات صفحة SEO
+│   ├── ServicesCom/          # مكونات صفحة الخدمات
+│   └── Layout.js             # التخطيط العام
+├── App.js                    # المكون الرئيسي
+├── index.js                  # نقطة الدخول
+└── index.css                 # الأنماط العامة
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## البدء السريع
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### المتطلبات
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js (الإصدار 16 أو أحدث)
+- npm أو yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### التثبيت
 
-## Learn More
+1. استنساخ المستودع:
+```bash
+git clone https://github.com/qwe2qwee/React-landingPage.git
+cd React-landingPage
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. تثبيت الاعتماديات:
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. تشغيل المشروع:
+```bash
+npm start
+```
 
-### Code Splitting
+سيفتح التطبيق على [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## الأوامر المتاحة
 
-### Analyzing the Bundle Size
+| الأمر | الوصف |
+|-------|-------|
+| `npm start` | تشغيل المشروع في وضع التطوير |
+| `npm run build` | بناء المشروع للإنتاج |
+| `npm test` | تشغيل الاختبارات |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## الصفحات
 
-### Making a Progressive Web App
+| المسار | الصفحة |
+|--------|--------|
+| `/` | الصفحة الرئيسية |
+| `/Servers` | صفحة الخدمات |
+| `/DigitalMarketing` | صفحة التسويق الرقمي |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## المساهمة
 
-### Advanced Configuration
+المساهمات مرحب بها! يرجى اتباع الخطوات التالية:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork المستودع
+2. إنشاء فرع جديد (`git checkout -b feature/AmazingFeature`)
+3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
+4. Push إلى الفرع (`git push origin feature/AmazingFeature`)
+5. فتح Pull Request
 
-### Deployment
+## الرخصة
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+هذا المشروع مرخص تحت رخصة MIT.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+
+صنع بـ ❤️ باستخدام React
+
+</div>
